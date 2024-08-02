@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cape Town - CRONO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:wght@400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff6600, #ffcc00);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5em; /* Increased font size for better visibility */
+            margin-bottom: 10px;
+            color: #ffcc00; /* Solid color for the text logo */
+            letter-spacing: 2px; /* Increased letter spacing */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2.5em;
+            color: #ff6600;
+        }
+
+        .destination-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .destination-info img {
+            width: 100%;
+            max-width: 800px; /* Max width for large screens */
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .destination-info p {
+            font-size: 1.2em;
+            color: #555;
+            text-align: center;
+            margin: 0 20px;
+        }
+
+        .must-visit {
+            margin-top: 40px;
+        }
+
+        .must-visit h3 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2em;
+            color: #ff6600;
+        }
+
+        .places {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .place-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            width: 30%; /* Adjust width for cards */
+            transition: transform 0.3s;
+        }
+
+        .place-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .place-card img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .place-card h4 {
+            font-size: 1.5em;
+            margin: 15px;
+            color: #333;
+        }
+
+        .place-card p {
+            font-size: 1em;
+            margin: 15px;
+            color: #555;
+        }
+
+        .learn-more {
+            display: block;
+            margin: 15px;
+            padding: 10px;
+            background: #ff6600;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .learn-more:hover {
+            background: #cc5200; /* Darker shade on hover */
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+
+        footer .social-icons {
+            margin-top: 10px;
+        }
+
+       
+        @media (max-width: 768px) {
+            .place-card {
+                width: 80%; 
+                margin: 10px auto; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CRONO</h1> <!-- Text logo -->
+            <nav>
+                <ul>
+                    <!-- <li><a href="#home">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                    <li><a href="#travel-tips">Travel Tips</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="destination-info">
+            <h2>Welcome to Cape Town</h2>
+            <img src="https://via.placeholder.com/800x400?text=Cape+Town" alt="Cape Town">
+            <p>Known for its stunning scenery, Cape Town is home to Table Mountain and beautiful beaches. Explore the vibrant V&A Waterfront. This cosmopolitan city offers a unique blend of natural beauty, rich history, and diverse culture, making it a must-visit destination for travelers seeking adventure and unforgettable experiences.</p>
+        </div>
+
+        <div class="must-visit">
+            <h3>Must-Visit Places in Cape Town</h3>
+            <div class="places">
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Table+Mountain" alt="Table Mountain">
+                    <h4>Table Mountain</h4>
+                    <p>Take a cable car to the top of this iconic flat-topped mountain for panoramic views of the city and the surrounding landscape.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=V%26A+Waterfront" alt="V&A Waterfront">
+                    <h4>V&A Waterfront</h4>
+                    <p>A vibrant harbor-side neighborhood with shops, restaurants, museums, and the Two Oceans Aquarium.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Robben+Island" alt="Robben Island">
+                    <h4>Robben Island</h4>
+                    <p>A UNESCO World Heritage site where Nelson Mandela was imprisoned, now a museum and memorial.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Kirstenbosch+National+Botanical+Garden" alt="Kirstenbosch National Botanical Garden">
+                    <h4>Kirstenbosch National Botanical Garden</h4>
+                    <p>A stunning garden showcasing the diverse flora of South Africa, with beautiful hiking trails and a treetop canopy walkway.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Camps+Bay" alt="Camps Bay">
+                    <h4>Camps Bay</h4>
+                    <p>A trendy beach suburb with white sand beaches, palm trees, and a lively strip of restaurants and bars.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Boulders+Beach" alt="Boulders Beach">
+                    <h4>Boulders Beach</h4>
+                    <p>A sheltered beach near Simon's Town known for its colony of African penguins and unique granite boulders.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Kalk+Bay" alt="Kalk Bay">
+                    <h4>Kalk Bay</h4>
+                    <p>A charming fishing village with colorful houses, antique shops, and a picturesque harbor.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Hout+Bay" alt="Hout Bay">
+                    <h4>Hout Bay</h4>
+                    <p>A scenic bay with a fishing harbor, sandy beach, and views of the dramatic Sentinel mountain peak.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Bo-Kaap" alt="Bo-Kaap">
+                    <h4>Bo-Kaap</h4>
+                    <p>A historic neighborhood known for its colorful houses and the Nurul Islam Mosque, the oldest in South Africa.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Groot+Constantia" alt="Groot Constantia">
+                    <h4>Groot Constantia</h4>
+                    <p>The oldest wine estate in South Africa, offering wine tastings, tours, and a chance to explore its historic buildings.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Clifton+Beaches" alt="Clifton Beaches">
+                    <h4>Clifton Beaches</h4>
+                    <p>A series of four beautiful beaches known for their white sand, clear water, and upscale beach clubs.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Kirstenbosch+Summer+Concerts" alt="Kirstenbosch Summer Concerts">
+                    <h4>Kirstenbosch Summer Concerts</h4>
+                    <p>Enjoy live music performances in the beautiful setting of the Kirstenbosch Botanical Garden during the summer months.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Zeitz+MOCAA" alt="Zeitz MOCAA">
+                    <h4>Zeitz MOCAA</h4>
+                    <p>The largest museum of contemporary art in Africa, housed in a converted grain silo at the V&A Waterfront.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Langa+Township" alt="Langa Township">
+                    <h4>Langa Township</h4>
+                    <p>The oldest township in Cape Town, offering guided tours to learn about its history and vibrant community life.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Chapman%27s+Peak+Drive" alt="Chapman's Peak Drive">
+                    <h4>Chapman's Peak Drive</h4>
+                    <p>A scenic coastal road offering breathtaking views of the Atlantic Ocean and the Twelve Apostles mountain range.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CRONO. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - CRONO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:wght@400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff6600, #ffcc00);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5em; /* Increased font size for better visibility */
+            margin-bottom: 10px;
+            color: #ffcc00; /* Solid color for the text logo */
+            letter-spacing: 2px; /* Increased letter spacing */
+            transition: transform 0.3s;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2.5em;
+            color: #ff6600;
+        }
+
+        .destinations {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .destination-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            width: 30%; /* Adjust width for cards */
+            transition: transform 0.3s;
+        }
+
+        .destination-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .destination-card img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .destination-card h3 {
+            font-size: 1.8em;
+            margin: 15px;
+            color: #333;
+        }
+
+        .destination-card p {
+            font-size: 1em;
+            margin: 15px;
+            color: #555;
+        }
+
+        .learn-more {
+            display: block;
+            margin: 15px;
+            padding: 10px;
+            background: #ff6600;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .learn-more:hover {
+            background: #cc5200; /* Darker shade on hover */
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+
+        footer .social-icons {
+            margin-top: 10px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .destination-card {
+                width: 80%; /* Full width on smaller screens */
+                margin: 10px auto; /* Center cards */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CRONO</h1> <!-- Text logo -->
+            <nav>
+                <ul>
+                    <!-- <li><a href="#home">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                    <li><a href="#travel-tips">Travel Tips</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul> -->
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Explore Our Destinations</h2>
+        <div class="destinations">
+            <div class="destination-card">
+                <img src="https://via.placeholder.com/400x200?text=Paris" alt="Paris">
+                <h3>Paris</h3>
+                <p>Known as the city of lights, Paris is famous for its art, fashion, and culture. Visit iconic landmarks like the Eiffel Tower and the Louvre Museum.</p>
+                <a href="paris.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="destination-card">
+                <img src="https://via.placeholder.com/400x200?text=Tokyo" alt="Tokyo">
+                <h3>Tokyo</h3>
+                <p>Tokyo is a bustling metropolis blending the ultramodern with traditional Japanese culture. Explore temples, gardens, and vibrant neighborhoods.</p>
+                <a href="tokyo.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="destination-card">
+                <img src="https://via.placeholder.com/400x200?text=New+York" alt="New York">
+                <h3>New York</h3>
+                <p>The city that never sleeps offers endless adventures, from Broadway shows to world-class museums and iconic landmarks like Times Square.</p>
+                <a href="newyork.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="destination-card">
+                <img src="https://via.placeholder.com/400x200?text=Rome" alt="Rome">
+                <h3>Rome</h3>
+                <p>Explore the ancient ruins of Rome, including the Colosseum and the Roman Forum. Experience the rich history and delicious Italian cuisine.</p>
+                <a href="rome.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="destination-card">
+                <img src="https://via.placeholder.com/400x200?text=London" alt="London">
+                <h3>London</h3>
+                <p>London is a vibrant city filled with history, culture, and entertainment. Visit the British Museum, Buckingham Palace, and the Tower of London.</p>
+                <a href="london.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="destination-card">
+                <img src="https://via.placeholder.com/400x200?text=Barcelona" alt="Barcelona">
+                <h3>Barcelona</h3>
+                <p>Famous for its unique architecture by Antoni Gaudí, Barcelona offers beautiful beaches, delicious tapas, and a lively atmosphere.</p>
+                <a href="barcelona.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="destination-card">
+                <img src="https://via.placeholder.com/400x200?text=Bangkok" alt="Bangkok">
+                <h3>Bangkok</h3>
+                <p>Experience the bustling street life, ornate temples, and vibrant markets of Bangkok. Don't miss the Grand Palace and Wat Pho.</p>
+                <a href="bangkok.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="destination-card">
+                <img src="https://via.placeholder.com/400x200?text=Sydney" alt="Sydney">
+                <h3>Sydney</h3>
+                <p>Sydney is known for its stunning harbor, iconic Sydney Opera House, and beautiful beaches like Bondi Beach.</p>
+                <a href="sydney.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="destination-card">
+                <img src="https://via.placeholder.com/400x200?text=Istanbul" alt="Istanbul">
+                <h3>Istanbul</h3>
+                <p>Istanbul is a city that straddles Europe and Asia, rich in history and culture. Explore the Hagia Sophia and the Grand Bazaar.</p>
+                <a href="istanbul.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="destination-card">
+                <img src="https://via.placeholder.com/400x200?text=Dubai" alt="Dubai">
+                <h3>Dubai</h3>
+                <p>Dubai is known for its modern architecture, luxury shopping, and vibrant nightlife. Visit the Burj Khalifa and the Dubai Mall.</p>
+                <a href="dubai.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="destination-card">
+                <img src="https://via.placeholder.com/400x200?text=Rio+de+Janeiro" alt="Rio de Janeiro">
+                <h3>Rio de Janeiro</h3>
+                <p>Famous for its Copacabana beach and the Christ the Redeemer statue, Rio offers stunning landscapes and lively culture.</p>
+                <a href="riodejanerio.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="destination-card">
+                <img src="https://via.placeholder.com/400x200?text=Cape+Town" alt="Cape Town">
+                <h3>Cape Town</h3>
+                <p>Known for its stunning scenery, Cape Town is home to Table Mountain and beautiful beaches. Explore the vibrant V&A Waterfront.</p>
+                <a href="capetown.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="destination-card">
+                <img src="https://via.placeholder.com/400x200?text=Athens" alt="Athens">
+                <h3>Athens</h3>
+                <p>The cradle of Western civilization, Athens is rich in history with landmarks like the Acropolis and ancient ruins.</p>
+                <a href="athens.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="destination-card">
+                <img src="https://via.placeholder.com/400x200?text=Lisbon" alt="Lisbon">
+                <h3>Lisbon</h3>
+                <p>Lisbon is known for its hilly landscape, colorful buildings, and historic neighborhoods. Don't miss the Belem Tower and Jerónimos Monastery.</p>
+                <a href="lisbon.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="destination-card">
+                <img src="https://via.placeholder.com/400x200?text=Prague" alt="Prague">
+                <h3>Prague</h3>
+                <p>Famous for its beautiful architecture and historic sites, Prague offers a charming atmosphere with attractions like Prague Castle and Charles Bridge.</p>
+                <a href="prague.html" class="learn-more">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CRONO. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

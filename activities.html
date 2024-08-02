@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities - CRONO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:wght@400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff6600, #ffcc00);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5em; /* Increased font size for better visibility */
+            margin-bottom: 10px;
+            color: #ffcc00; /* Solid color for the text logo */
+            letter-spacing: 2px; /* Increased letter spacing */
+            transition: transform 0.3s;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2.5em;
+            color: #ff6600;
+        }
+
+        .activities {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .activity-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            width: 30%; /* Adjust width for cards */
+            transition: transform 0.3s;
+        }
+
+        .activity-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .activity-card img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .activity-card h3 {
+            font-size: 1.8em;
+            margin: 15px;
+            color: #333;
+        }
+
+        .activity-card p {
+            font-size: 1em;
+            margin: 15px;
+            color: #555;
+        }
+
+        .learn-more {
+            display: block;
+            margin: 15px;
+            padding: 10px;
+            background: #ff6600;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .learn-more:hover {
+            background: #cc5200; /* Darker shade on hover */
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+
+        footer .social-icons {
+            margin-top: 10px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .activity-card {
+                width: 80%; /* Full width on smaller screens */
+                margin: 10px auto; /* Center cards */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CRONO</h1> <!-- Text logo -->
+            <nav>
+                <ul>
+                    <!-- <li><a href="#home">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                    <li><a href="#travel-tips">Travel Tips</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Activities to Enjoy</h2>
+        <div class="activities">
+            <div class="activity-card">
+                <img src="https://via.placeholder.com/400x200?text=Hiking" alt="Hiking">
+                <h3>Hiking Adventures</h3>
+                <p>Explore breathtaking trails and stunning landscapes in various national parks and scenic areas.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="activity-card">
+                <img src="https://via.placeholder.com/400x200?text=Cultural+Tours" alt="Cultural Tours">
+                <h3>Cultural Tours</h3>
+                <p>Immerse yourself in local traditions and history with guided tours through historic sites and museums.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="activity-card">
+                <img src="https://via.placeholder.com/400x200?text=Food+Tasting" alt="Food Tasting">
+                <h3>Food Tasting</h3>
+                <p>Indulge in culinary delights from around the world, sampling local dishes and beverages.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="activity-card">
+                <img src="https://via.placeholder.com/400x200?text=Wildlife+Safaris" alt="Wildlife Safaris">
+                <h3>Wildlife Safaris</h3>
+                <p>Witness nature in its purest form with guided safaris in national parks and wildlife reserves.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="activity-card">
+                <img src="https://via.placeholder.com/400x200?text=Beach+Activities" alt="Beach Activities">
+                <h3>Beach Activities</h3>
+                <p>Relax on beautiful beaches or engage in thrilling water sports like snorkeling and surfing.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="activity-card">
+                <img src="https://via.placeholder.com/400x200?text=Adventure+Sports" alt="Adventure Sports">
+                <h3>Adventure Sports</h3>
+                <p>Experience adrenaline-pumping activities such as zip-lining, rock climbing, and bungee jumping.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="activity-card">
+                <img src="https://via.placeholder.com/400x200?text=City+Tours" alt="City Tours">
+                <h3>City Tours</h3>
+                <p>Explore vibrant cities with guided tours that showcase the best attractions and hidden gems.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="activity-card">
+                <img src="https://via.placeholder.com/400x200?text=Camping" alt="Camping">
+                <h3>Camping Experiences</h3>
+                <p>Connect with nature by camping in beautiful locations, from forests to mountains.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="activity-card">
+                <img src="https://via.placeholder.com/400x200?text=Photography+Tours" alt="Photography Tours">
+                <h3>Photography Tours</h3>
+                <p>Join expert photographers on tours to capture stunning landscapes and cultural moments.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="activity-card">
+                <img src="https://via.placeholder.com/400x200?text=Wellness+Retreats" alt="Wellness Retreats">
+                <h3>Wellness Retreats</h3>
+                <p>Recharge your mind and body with wellness retreats that focus on relaxation and rejuvenation.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="activity-card">
+                <img src="https://via.placeholder.com/400x200?text=Scenic+Train+Rides" alt="Scenic Train Rides">
+                <h3>Scenic Train Rides</h3>
+                <p>Enjoy breathtaking views from the comfort of a train as you travel through picturesque landscapes.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="activity-card">
+                <img src="https://via.placeholder.com/400x200?text=Fishing" alt="Fishing">
+                <h3>Fishing Trips</h3>
+                <p>Experience the tranquility of fishing in serene lakes, rivers, or oceans with guided trips.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="activity-card">
+                <img src="https://via.placeholder.com/400x200?text=Historical+Tours" alt="Historical Tours">
+                <h3>Historical Tours</h3>
+                <p>Discover the rich history of a region through guided tours of historical sites and landmarks.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="activity-card">
+                <img src="https://via.placeholder.com/400x200?text=Yoga+Retreats" alt="Yoga Retreats">
+                <h3>Yoga Retreats</h3>
+                <p>Find your inner peace with yoga retreats that offer classes in serene environments.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CRONO. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

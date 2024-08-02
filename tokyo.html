@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo - CRONO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:wght@400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff6600, #ffcc00);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5em; /* Increased font size for better visibility */
+            margin-bottom: 10px;
+            color: #ffcc00; /* Solid color for the text logo */
+            letter-spacing: 2px; /* Increased letter spacing */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2.5em;
+            color: #ff6600;
+        }
+
+        .destination-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .destination-info img {
+            width: 100%;
+            max-width: 800px; /* Max width for large screens */
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .destination-info p {
+            font-size: 1.2em;
+            color: #555;
+            text-align: center;
+            margin: 0 20px;
+        }
+
+        .must-visit {
+            margin-top: 40px;
+        }
+
+        .must-visit h3 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2em;
+            color: #ff6600;
+        }
+
+        .places {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .place-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            width: 30%; /* Adjust width for cards */
+            transition: transform 0.3s;
+        }
+
+        .place-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .place-card img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .place-card h4 {
+            font-size: 1.5em;
+            margin: 15px;
+            color: #333;
+        }
+
+        .place-card p {
+            font-size: 1em;
+            margin: 15px;
+            color: #555;
+        }
+
+        .learn-more {
+            display: block;
+            margin: 15px;
+            padding: 10px;
+            background: #ff6600;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .learn-more:hover {
+            background: #cc5200; /* Darker shade on hover */
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+
+        footer .social-icons {
+            margin-top: 10px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .place-card {
+                width: 80%; /* Full width on smaller screens */
+                margin: 10px auto; /* Center cards */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CRONO</h1> 
+            <nav>
+                <ul>
+                   
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="destination-info">
+            <h2>Welcome to Tokyo</h2>
+            <img src="https://via.placeholder.com/800x400?text=Tokyo" alt="Tokyo">
+            <p>Tokyo is a bustling metropolis blending the ultramodern with traditional Japanese culture. Explore temples, gardens, and vibrant neighborhoods. The city offers a unique experience with its mix of modern skyscrapers and historical sites, making it a must-visit destination for travelers.</p>
+        </div>
+
+        <div class="must-visit">
+            <h3>Must-Visit Places in Tokyo</h3>
+            <div class="places">
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Shibuya" alt="Shibuya Crossing">
+                    <h4>Shibuya Crossing</h4>
+                    <p>Experience the world's busiest pedestrian crossing and immerse yourself in the vibrant energy of Shibuya.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Tokyo+Tower" alt="Tokyo Tower">
+                    <h4>Tokyo Tower</h4>
+                    <p>A symbol of Tokyo, this iconic tower offers stunning views of the city from its observation decks.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Meiji+Shrine" alt="Meiji Shrine">
+                    <h4>Meiji Shrine</h4>
+                    <p>Visit this serene Shinto shrine surrounded by a beautiful forested area, dedicated to Emperor Meiji and Empress Shoken.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Asakusa" alt="Asakusa">
+                    <h4>Asakusa and Senso-ji Temple</h4>
+                    <p>Explore the historic district of Asakusa, home to the famous Senso-ji Temple, Tokyo's oldest temple.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Akihabara" alt="Akihabara">
+                    <h4>Akihabara</h4>
+                    <p>Known as the center of otaku culture, Akihabara is a paradise for anime, manga, and electronics enthusiasts.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Tokyo+Skytree" alt="Tokyo Skytree">
+                    <h4>Tokyo Skytree</h4>
+                    <p>The tallest structure in Japan, offering panoramic views and a shopping complex at its base.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Ueno+Park" alt="Ueno Park">
+                    <h4>Ueno Park</h4>
+                    <p>A large public park with museums, a zoo, and beautiful cherry blossoms in spring.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Tsukiji+Market" alt="Tsukiji Market">
+                    <h4>Tsukiji Outer Market</h4>
+                    <p>Experience the vibrant atmosphere of Tokyo's famous fish market and enjoy fresh seafood.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Ginza" alt="Ginza">
+                    <h4>Ginza</h4>
+                    <p>Tokyo's upscale shopping district, known for luxury boutiques, department stores, and fine dining.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Odaiba" alt="Odaiba">
+                    <h4>Odaiba</h4>
+                    <p>A futuristic entertainment district on a man-made island, featuring shopping, dining, and attractions like teamLab Borderless.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Roppongi" alt="Roppongi">
+                    <h4>Roppongi Hills</h4>
+                    <p>A modern complex with art museums, shopping, and dining options, offering stunning views of Tokyo.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Harajuku" alt="Harajuku">
+                    <h4>Harajuku</h4>
+                    <p>Famous for its youth culture and fashion, explore quirky shops and delicious street food in Takeshita Street.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Shinjuku" alt="Shinjuku">
+                    <h4>Shinjuku Gyoen National Garden</h4>
+                    <p>A beautiful park featuring traditional Japanese gardens, perfect for a peaceful escape from the city.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Yoyogi+Park" alt="Yoyogi Park">
+                    <h4>Yoyogi Park</h4>
+                    <p>A spacious park ideal for picnics, jogging, and enjoying outdoor activities, especially during cherry blossom season.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Shinjuku" alt="Shinjuku">
+                    <h4>Shinjuku</h4>
+                    <p>A bustling district known for its skyscrapers, nightlife, and the famous Shinjuku Gyoen National Garden.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CRONO. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

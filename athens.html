@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athens - CRONO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:wght@400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff6600, #ffcc00);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5em; /* Increased font size for better visibility */
+            margin-bottom: 10px;
+            color: #ffcc00; /* Solid color for the text logo */
+            letter-spacing: 2px; /* Increased letter spacing */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2.5em;
+            color: #ff6600;
+        }
+
+        .destination-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .destination-info img {
+            width: 100%;
+            max-width: 800px; /* Max width for large screens */
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .destination-info p {
+            font-size: 1.2em;
+            color: #555;
+            text-align: center;
+            margin: 0 20px;
+        }
+
+        .must-visit {
+            margin-top: 40px;
+        }
+
+        .must-visit h3 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2em;
+            color: #ff6600;
+        }
+
+        .places {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .place-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            width: 30%; /* Adjust width for cards */
+            transition: transform 0.3s;
+        }
+
+        .place-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .place-card img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .place-card h4 {
+            font-size: 1.5em;
+            margin: 15px;
+            color: #333;
+        }
+
+        .place-card p {
+            font-size: 1em;
+            margin: 15px;
+            color: #555;
+        }
+
+        .learn-more {
+            display: block;
+            margin: 15px;
+            padding: 10px;
+            background: #ff6600;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .learn-more:hover {
+            background: #cc5200; /* Darker shade on hover */
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+
+        footer .social-icons {
+            margin-top: 10px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .place-card {
+                width: 80%; 
+                margin: 10px auto; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CRONO</h1> 
+            <nav>
+                <ul>
+                    <!-- <li><a href="#home">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                    <li><a href="#travel-tips">Travel Tips</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="destination-info">
+            <h2>Welcome to Athens</h2>
+            <img src="https://via.placeholder.com/800x400?text=Athens" alt="Athens">
+            <p>The cradle of Western civilization, Athens is rich in history with landmarks like the Acropolis and ancient ruins. This vibrant city offers a unique blend of ancient heritage and modern life, making it a must-visit destination for travelers seeking to explore the roots of democracy and philosophy.</p>
+        </div>
+
+        <div class="must-visit">
+            <h3>Must-Visit Places in Athens</h3>
+            <div class="places">
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Acropolis" alt="Acropolis">
+                    <h4>The Acropolis</h4>
+                    <p>The most iconic symbol of Athens, this ancient citadel contains several buildings of great architectural and historic significance, including the Parthenon.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Parthenon" alt="Parthenon">
+                    <h4>The Parthenon</h4>
+                    <p>The temple dedicated to the goddess Athena, known for its stunning Doric architecture and historical importance.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Ancient+Agora" alt="Ancient Agora">
+                    <h4>Ancient Agora</h4>
+                    <p>The heart of ancient Athens, this site was the center of political and social activity, featuring ruins of temples and the Stoa of Attalos.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Temple+of+Olympian+Zeus" alt="Temple of Olympian Zeus">
+                    <h4>Temple of Olympian Zeus</h4>
+                    <p>Once the largest temple in Greece, it features impressive columns and is a testament to ancient engineering.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Panathenaic+Stadium" alt="Panathenaic Stadium">
+                    <h4>Panathenaic Stadium</h4>
+                    <p>The site of the first modern Olympics, this stadium is built on the site of an ancient one and is a great place to explore.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=National+Archaeological+Museum" alt="National Archaeological Museum">
+                    <h4>National Archaeological Museum</h4>
+                    <p>This museum houses an extensive collection of artifacts from ancient Greece, including sculptures and pottery.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Mount+Lycabettus" alt="Mount Lycabettus">
+                    <h4>Mount Lycabettus</h4>
+                    <p>Offering panoramic views of the city, this hill is a popular spot for hiking and sunset watching.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Plaka" alt="Plaka">
+                    <h4>Plaka</h4>
+                    <p>The charming old neighborhood of Athens, filled with narrow streets, shops, and traditional tavernas.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Odeon+of+Herodes+Atticus" alt="Odeon of Herodes Atticus">
+                    <h4>Odeon of Herodes Atticus</h4>
+                    <p>A well-preserved ancient theater that hosts performances during the Athens Festival.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Byzantine+Museum" alt="Byzantine Museum">
+                    <h4>Byzantine Museum</h4>
+                    <p>Showcasing a rich collection of Byzantine art, this museum provides insight into Greece's medieval history.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=National+Garden" alt="National Garden">
+                    <h4>National Garden</h4>
+                    <p>A peaceful oasis in the heart of Athens, perfect for a leisurely stroll or a picnic.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Kerameikos" alt="Kerameikos">
+                    <h4>Kerameikos</h4>
+                    <p>The ancient cemetery of Athens, featuring ruins and a museum showcasing artifacts from the site.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Filopappou+Hill" alt="Filopappou Hill">
+                    <h4>Filopappou Hill</h4>
+                    <p>Offering stunning views of the Acropolis, this hill is a great spot for hiking and enjoying nature.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Temple+of+Hephaestus" alt="Temple of Hephaestus">
+                    <h4>Temple of Hephaestus</h4>
+                    <p>One of the best-preserved ancient temples, located in the Ancient Agora of Athens.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CRONO. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

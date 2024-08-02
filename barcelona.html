@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcelona - CRONO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:wght@400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff6600, #ffcc00);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5em; /* Increased font size for better visibility */
+            margin-bottom: 10px;
+            color: #ffcc00; /* Solid color for the text logo */
+            letter-spacing: 2px; /* Increased letter spacing */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2.5em;
+            color: #ff6600;
+        }
+
+        .destination-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .destination-info img {
+            width: 100%;
+            max-width: 800px; /* Max width for large screens */
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .destination-info p {
+            font-size: 1.2em;
+            color: #555;
+            text-align: center;
+            margin: 0 20px;
+        }
+
+        .must-visit {
+            margin-top: 40px;
+        }
+
+        .must-visit h3 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2em;
+            color: #ff6600;
+        }
+
+        .places {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .place-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            width: 30%; /* Adjust width for cards */
+            transition: transform 0.3s;
+        }
+
+        .place-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .place-card img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .place-card h4 {
+            font-size: 1.5em;
+            margin: 15px;
+            color: #333;
+        }
+
+        .place-card p {
+            font-size: 1em;
+            margin: 15px;
+            color: #555;
+        }
+
+        .learn-more {
+            display: block;
+            margin: 15px;
+            padding: 10px;
+            background: #ff6600;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .learn-more:hover {
+            background: #cc5200; /* Darker shade on hover */
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+
+        footer .social-icons {
+            margin-top: 10px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .place-card {
+                width: 80%; /* Full width on smaller screens */
+                margin: 10px auto; /* Center cards */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CRONO</h1> 
+            <nav>
+                <ul>
+                    <!-- <li><a href="#home">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                    <li><a href="#travel-tips">Travel Tips</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="destination-info">
+            <h2>Welcome to Barcelona</h2>
+            <img src="https://via.placeholder.com/800x400?text=Barcelona" alt="Barcelona">
+            <p>Famous for its unique architecture by Antoni Gaudí, Barcelona offers beautiful beaches, delicious tapas, and a lively atmosphere. This vibrant city is a blend of modernist art, rich history, and a dynamic culture, making it a must-visit destination for travelers from around the globe.</p>
+        </div>
+
+        <div class="must-visit">
+            <h3>Must-Visit Places in Barcelona</h3>
+            <div class="places">
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Sagrada+Familia" alt="Sagrada Familia">
+                    <h4>Sagrada Familia</h4>
+                    <p>This iconic basilica, designed by Antoni Gaudí, is a masterpiece of modernist architecture and a UNESCO World Heritage site.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Park+Güell" alt="Park Güell">
+                    <h4>Park Güell</h4>
+                    <p>A colorful park also designed by Gaudí, featuring whimsical structures and stunning views of the city.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Gothic+Quarter" alt="Gothic Quarter">
+                    <h4>Gothic Quarter</h4>
+                    <p>Explore the narrow medieval streets, charming squares, and historic buildings in this atmospheric neighborhood.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=La+Rambla" alt="La Rambla">
+                    <h4>La Rambla</h4>
+                    <p>A lively street in the heart of the city, perfect for strolling, dining, and shopping.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Casa+Batlló" alt="Casa Batlló">
+                    <h4>Casa Batlló</h4>
+                    <p>Another Gaudí masterpiece, this building is known for its unique design and colorful façade.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Camp+Nou" alt="Camp Nou">
+                    <h4>Camp Nou</h4>
+                    <p>The home stadium of FC Barcelona, offering tours and an immersive experience for football fans.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Montjuïc" alt="Montjuïc">
+                    <h4>Montjuïc</h4>
+                    <p>A hill overlooking the harbor, featuring gardens, museums, and the Montjuïc Castle.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Barcelona+Beach" alt="Barcelona Beach">
+                    <h4>Barcelona Beach</h4>
+                    <p>Relax on the beautiful sandy beaches or enjoy water sports along the Mediterranean coast.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Picasso+Museum" alt="Picasso Museum">
+                    <h4>Picasso Museum</h4>
+                    <p>Explore an extensive collection of works by Pablo Picasso, showcasing his artistic evolution.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Food+Markets" alt="Food Markets">
+                    <h4>Food Markets</h4>
+                    <p>Experience the vibrant atmosphere of local food markets like La Boqueria, offering fresh produce and delicious tapas.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=El+Born" alt="El Born">
+                    <h4>El Born</h4>
+                    <p>A trendy neighborhood known for its boutiques, cafes, and the beautiful Basilica de Santa Maria del Mar.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Barri+Gòtic" alt="Barri Gòtic">
+                    <h4>Barri Gòtic</h4>
+                    <p>The Gothic Quarter is filled with narrow medieval streets, historic buildings, and charming squares.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Palau+de+la+Música+Catalana" alt="Palau de la Música Catalana">
+                    <h4>Palau de la Música Catalana</h4>
+                    <p>A UNESCO World Heritage site, this concert hall is known for its stunning architecture and vibrant performances.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Park+de+la+Ciutadella" alt="Park de la Ciutadella">
+                    <h4>Park de la Ciutadella</h4>
+                    <p>A beautiful park featuring a zoo, a lake, and the impressive Cascada Monumental fountain.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Casa+Milà" alt="Casa Milà">
+                    <h4>Casa Milà (La Pedrera)</h4>
+                    <p>Another iconic Gaudí building, known for its unique stone façade and rooftop chimneys.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CRONO. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

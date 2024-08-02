@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York - CRONO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:wght@400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff6600, #ffcc00);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5em; /* Increased font size for better visibility */
+            margin-bottom: 10px;
+            color: #ffcc00; /* Solid color for the text logo */
+            letter-spacing: 2px; /* Increased letter spacing */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2.5em;
+            color: #ff6600;
+        }
+
+        .destination-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .destination-info img {
+            width: 100%;
+            max-width: 800px; /* Max width for large screens */
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .destination-info p {
+            font-size: 1.2em;
+            color: #555;
+            text-align: center;
+            margin: 0 20px;
+        }
+
+        .must-visit {
+            margin-top: 40px;
+        }
+
+        .must-visit h3 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2em;
+            color: #ff6600;
+        }
+
+        .places {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .place-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            width: 30%; /* Adjust width for cards */
+            transition: transform 0.3s;
+        }
+
+        .place-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .place-card img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .place-card h4 {
+            font-size: 1.5em;
+            margin: 15px;
+            color: #333;
+        }
+
+        .place-card p {
+            font-size: 1em;
+            margin: 15px;
+            color: #555;
+        }
+
+        .learn-more {
+            display: block;
+            margin: 15px;
+            padding: 10px;
+            background: #ff6600;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .learn-more:hover {
+            background: #cc5200; /* Darker shade on hover */
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+
+        footer .social-icons {
+            margin-top: 10px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .place-card {
+                width: 80%; /* Full width on smaller screens */
+                margin: 10px auto; /* Center cards */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CRONO</h1> 
+            <nav>
+                <ul>
+                    <!-- <li><a href="#home">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                    <li><a href="#travel-tips">Travel Tips</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="destination-info">
+            <h2>Welcome to New York</h2>
+            <img src="https://via.placeholder.com/800x400?text=New+York" alt="New York">
+            <p>The city that never sleeps offers endless adventures, from Broadway shows to world-class museums and iconic landmarks like Times Square. New York City is a vibrant metropolis known for its diverse culture, bustling streets, and rich history, making it a must-visit destination for travelers.</p>
+        </div>
+
+        <div class="must-visit">
+            <h3>Must-Visit Places in New York</h3>
+            <div class="places">
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Statue+of+Liberty" alt="Statue of Liberty">
+                    <h4>Statue of Liberty</h4>
+                    <p>A symbol of freedom and democracy, this iconic statue is a must-see for every visitor.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Times+Square" alt="Times Square">
+                    <h4>Times Square</h4>
+                    <p>Famous for its bright lights and bustling atmosphere, Times Square is the heart of New York City.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Central+Park" alt="Central Park">
+                    <h4>Central Park</h4>
+                    <p>A massive green oasis in the middle of the city, perfect for picnics, walks, and outdoor activities.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Metropolitan+Museum+of+Art" alt="Metropolitan Museum of Art">
+                    <h4>Metropolitan Museum of Art</h4>
+                    <p>One of the largest and most prestigious art museums in the world, featuring thousands of works from various cultures.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Brooklyn+Bridge" alt="Brooklyn Bridge">
+                    <h4>Brooklyn Bridge</h4>
+                    <p>A historic bridge offering stunning views of the Manhattan skyline, perfect for a scenic walk.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=One+World+Trade+Center" alt="One World Trade Center">
+                    <h4>One World Trade Center</h4>
+                    <p>The tallest building in the Western Hemisphere, offering breathtaking views from its observation deck.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Broadway" alt="Broadway">
+                    <h4>Broadway</h4>
+                    <p>Experience world-class theater productions and musicals in the iconic Broadway district.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Empire+State+Building" alt="Empire State Building">
+                    <h4>Empire State Building</h4>
+                    <p>Visit this iconic skyscraper for stunning views of the city from its observation decks.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=9/11+Memorial" alt="9/11 Memorial">
+                    <h4>9/11 Memorial</h4>
+                    <p>A poignant tribute to the lives lost during the September 11 attacks, located at the World Trade Center site.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Chinatown" alt="Chinatown">
+                    <h4>Chinatown</h4>
+                    <p>Explore the vibrant streets of Chinatown, filled with shops, restaurants, and cultural experiences.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Fifth+Avenue" alt="Fifth Avenue">
+                    <h4>Fifth Avenue</h4>
+                    <p>Shop at luxury stores and iconic brands along one of the most famous shopping streets in the world.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=The+High+Line" alt="The High Line">
+                    <h4>The High Line</h4>
+                    <p>A unique elevated park built on a historic freight rail line, offering beautiful gardens and views of the city.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Natural+History+Museum" alt="American Museum of Natural History">
+                    <h4>American Museum of Natural History</h4>
+                    <p>Home to fascinating exhibits on natural history, including dinosaur fossils and the famous planetarium.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=St.+Patrick's+Cathedral" alt="St. Patrick's Cathedral">
+                    <h4>St. Patrick's Cathedral</h4>
+                    <p>A stunning Neo-Gothic cathedral located on Fifth Avenue, known for its beautiful architecture and serene atmosphere.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="place-card">
+                    <img src="https://via.placeholder.com/400x200?text=Rockefeller+Center" alt="Rockefeller Center">
+                    <h4>Rockefeller Center</h4>
+                    <p>Visit this famous entertainment and shopping complex, home to the iconic ice skating rink and Top of the Rock observation deck.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CRONO. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

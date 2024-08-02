@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - CRONO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:wght@400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff6600, #ffcc00);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5em; /* Increased font size for better visibility */
+            margin-bottom: 10px;
+            color: #ffcc00; /* Solid color for the text logo */
+            letter-spacing: 2px; /* Increased letter spacing */
+            transition: transform 0.3s;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2.5em;
+            color: #ff6600;
+        }
+
+        .blog-posts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .blog-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            width: 30%; /* Adjust width for cards */
+            transition: transform 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-card img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .blog-card h3 {
+            font-size: 1.8em;
+            margin: 15px;
+            color: #333;
+        }
+
+        .blog-card p {
+            font-size: 1em;
+            margin: 15px;
+            color: #555;
+        }
+
+        .read-more {
+            display: block;
+            margin: 15px;
+            padding: 10px;
+            background: #ff6600;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .read-more:hover {
+            background: #cc5200; /* Darker shade on hover */
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+
+        footer .social-icons {
+            margin-top: 10px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .blog-card {
+                width: 80%; /* Full width on smaller screens */
+                margin: 10px auto; /* Center cards */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CRONO</h1> <!-- Text logo -->
+            <nav>
+                <ul>
+                    <!-- <li><a href="#home">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                    <li><a href="#travel-tips">Travel Tips</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Our Latest Blog Posts</h2>
+        <div class="blog-posts">
+            <div class="blog-card">
+                <img src="https://via.placeholder.com/400x200?text=Travel+Tips" alt="Travel Tips">
+                <h3>10 Essential Travel Tips</h3>
+                <p>Discover the must-know tips for making your travels smoother and more enjoyable.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="blog-card">
+                <img src="https://via.placeholder.com/400x200?text=Top+Destinations" alt="Top Destinations">
+                <h3>Top 5 Destinations for 2024</h3>
+                <p>Explore the top destinations you should visit in 2024 for a memorable experience.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="blog-card">
+                <img src="https://via.placeholder.com/400x200?text=Food+Adventures" alt="Food Adventures">
+                <h3>Food Adventures Around the World</h3>
+                <p>Join us as we explore the culinary delights of various cultures around the globe.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="blog-card">
+                <img src="https://via.placeholder.com/400x200?text=Adventure+Travel" alt="Adventure Travel">
+                <h3>Adventure Travel: Thrilling Experiences</h3>
+                <p>From hiking to extreme sports, discover thrilling adventures waiting for you.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="blog-card">
+                <img src="https://via.placeholder.com/400x200?text=Travel+Photography" alt="Travel Photography">
+                <h3>Capturing Memories: Travel Photography Tips</h3>
+                <p>Learn how to take stunning travel photos that will last a lifetime.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="blog-card">
+                <img src="https://via.placeholder.com/400x200?text=Solo+Travel" alt="Solo Travel">
+                <h3>The Joys of Solo Travel</h3>
+                <p>Explore the benefits and experiences of traveling alone and how to make the most of it.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="blog-card">
+                <img src="https://via.placeholder.com/400x200?text=Family+Travel" alt="Family Travel">
+                <h3>Family Travel: Tips for a Smooth Trip</h3>
+                <p>Get tips on how to travel with kids and make family vacations enjoyable for everyone.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="blog-card">
+                <img src="https://via.placeholder.com/400x200?text=Travel+Safety" alt="Travel Safety">
+                <h3>Staying Safe While Traveling</h3>
+                <p>Essential safety tips to keep in mind while exploring new places.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="blog-card">
+                <img src="https://via.placeholder.com/400x200?text=Eco+Travel" alt="Eco Travel">
+                <h3>Eco-Friendly Travel: How to Be a Responsible Tourist</h3>
+                <p>Learn how to minimize your environmental impact while traveling.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="blog-card">
+                <img src="https://via.placeholder.com/400x200?text=Travel+Budgeting" alt="Travel Budgeting">
+                <h3>Budgeting for Your Next Trip</h3>
+                <p>Tips on how to budget effectively for your travels without breaking the bank.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CRONO. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
